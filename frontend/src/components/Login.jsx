@@ -31,7 +31,7 @@ function Login() {
     setLoading(true)
     setError("")
     try {
-      const {data}=await axios.post("http://localhost:4002/api/v1/user/login",{
+      const {data}=await axios.post("https://deepseek-clone-eight-beta/api/v1/user/login",{
         email:formData.email,
         password:formData.password,
       },{
